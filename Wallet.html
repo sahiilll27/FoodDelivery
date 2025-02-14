@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Food Delivery</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/wallet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1 class="logo">FoodTime</h1>
+        <div class="sidebar-menus">
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+            <a href="Bills.html"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="Wallet.html"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="Notifications.html"><ion-icon name="notifications-outline"></ion-icon>Notifications</a>
+            <a href="contact.html"><ion-icon name="chatbubbles-outline"></ion-icon>Contact-us</a>
+            <a href="settings.html"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+        </div>
+        <div class="sidebar-logout">
+            <a href="logout.html"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-navbar">
+            <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="Search wallet">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="profile">
+                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>My Wallet</h2>
+            <div class="wallet-balance">
+                <h3>Current Balance</h3>
+                <p>$100.00</p>
+            </div>
+            <div class="wallet-transactions">
+                <h3>Recent Transactions</h3>
+                <div class="transaction-item">
+                    <p>Order #12345</p>
+                    <p>-$45.00</p>
+                </div>
+                <div class="transaction-item">
+                    <p>Order #12346</p>
+                    <p>-$30.00</p>
+                </div>
+                <div class="transaction-item">
+                    <p>Order #12347</p>
+                    <p>-$25.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script  src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+
+</html>

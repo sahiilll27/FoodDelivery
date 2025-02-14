@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+        
+</head>
+
+<body>
+
+    <!---sidebar-->
+    <div class="sidebar">
+        <!--logo-->
+        <h1 class="logo">FoodTime</h1>
+        <!---Menus-->
+        <div class="sidebar-menus">
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a>
+            <a href="Bills.html"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="Wallet.html"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="Notifications.html"><ion-icon name="notifications-outline"></ion-icon>Notifications</a>
+            <a href="contact.html"><ion-icon name="chatbubbles-outline"></ion-icon>Contact-us</a>
+            <a href="settings.html"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+        </div>
+        <!--logout--->
+        <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+        </div>
+    </div>
+
+    <!---main-->
+    <div class="main">
+        <!--main navbar--->
+        <div class="main-navbar">
+            <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="Search for food" />
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="profile">
+                <a class="cart" href="#"><ion-icon name="cart-outline" /></a>
+                <a class="user" href="#"><ion-icon name="person-outline" /></a>
+            </div>
+
+        </div>
+        <!---main highlight-->
+        <div class="main-highlight">
+            <!---title section and arrow-->
+            <div class="main-header">
+                <h2 class="main-title">
+                    Recommendations
+                </h2>
+                <div class="main-arrow">
+                    <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <!---highlight menu-->
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/salad.png" />
+                    <div class="highlight-desc">
+                        <h4>Fresh Salad</h4>
+                        <p>$42.50</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/cafe_latte.png" />
+                    <div class="highlight-desc">
+                        <h4>Cafe Latte</h4>
+                        <p>$60.50</p>
+                    </div>
+
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/Primium_Steak.png" />
+                    <div class="highlight-desc">
+                        <h4>Primium Steak</h4>
+                        <p>$80.50</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="images/Big_burgger.png" />
+                    <div class="highlight-desc">
+                        <h4>Big Burger</h4>
+                        <p>$199.50</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--main menus /order-->
+        <div class="main-menus">
+            <!---filter section-->
+            <div class="main-filter">
+                <div>
+                    <h2 class="main-title">Menu<br>Category</h2>
+
+                    <div class="main-arrow">
+                        <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                        <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="fillter-wrapper">
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>All Menus</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Burger</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="Pizza-outline"></ion-icon>
+                        </div>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="wine-outline"></ion-icon>
+                        </div>
+                        <p>Wine</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Ice cream</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Coffe</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>Seafood</p>
+                    </div>
+                    <div class="fillter-card">
+                        <div class="fillter-icon">
+                            <ion-icon name="nutrition-outline"></ion-icon>
+                        </div>
+                        <p>Healthy</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="main-details">
+                <h2>Choose Orders</h2>
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/shrimp_soup.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Shrimp soup</h4>
+                                <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                                    libero sequi similique ex maxime, </p>
+                                <p class="price">$155.00</p>
+                            </div>
+                            <button  class="js-addtocart btnjs">AddToCart</button>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/pizza.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>pizza</h4>
+                                <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                                    libero sequi similique ex maxime. </p>
+                                <p class="price">$100.00</p>
+                            </div>
+                            <button  class="js-addtocart btnjs">AddToCart</button>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/wine.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Wine</h4>
+                                <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                                    libero sequi similique ex maxime. </p>
+                                <p class="price">$199.00</p>
+                            </div>
+                            <button  class="js-addtocart btnjs">AddToCart</button>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="images/coffe.jpg">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Coffe</h4>
+                                <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                                    libero sequi similique ex maxime. </p>
+                                <p class="price">$199.00</p>
+                            </div>
+                            <button  class="js-addtocart btnjs">AddToCart</button>
+                        </div>
+                    </div> <div class="detail-card">
+                        <img class="detail-img" src="images/Big_burgger.png">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Burgger</h4>
+                                <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                                    libero sequi similique ex maxime, </p>
+                                <p class="price">$199.00</p>
+                            </div>
+                            <button  class="js-addtocart btnjs">AddToCart</button>
+                        </div>
+                    </div> <div class="detail-card">
+                        <img class="detail-img" src="images/salad.png">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Salad</h4>
+                                <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+                                    libero sequi similique ex maxime. </p>
+                                <p class="price">$199.00</p>
+                            </div>
+                            
+                                  <button  class="js-addtocart btnjs">AddToCart</button>
+
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- adding javascript -->
+<script src="app.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+ </html>
